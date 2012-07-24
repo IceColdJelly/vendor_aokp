@@ -1,6 +1,7 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/crespo.mk \
     $(LOCAL_DIR)/crespo4g.mk \
+    $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/stingray.mk \
