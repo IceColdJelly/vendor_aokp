@@ -10,7 +10,6 @@ PRODUCT_PACKAGES += \
     AOKPtips \
     AppWidgetPicker \
     LatinImeDictionary \
-    Microbes \
     MusicFX \
     MusicVisualization \
     NoiseField \
@@ -18,8 +17,13 @@ PRODUCT_PACKAGES += \
     PhaseBeam \
     ROMControl \
     SuperSU \
-    SwagPapers \
-    UnicornPorn
+    SwagPapers
+
+# move from modules to copy files
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
+    vendor/aokp/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
+    vendor/aokp/prebuilt/common/app/UnicornPorn.apk:system/app/UnicornPorn.apk \
 
 # Use prebuilt su until fixed when built
 PRODUCT_COPY_FILES += \
