@@ -17,7 +17,6 @@
 		<item>TORCH</item>
                 <item>NFC</item>
                 <item>SWAGGER</item>
-                <item>BLN</item>
 	</string-array>
 	
 	<string-array name="available_toggles_values">
@@ -36,7 +35,6 @@
 		<item>Torch</item>
                 <item>NFC</item>
                 <item>Swagger</item>
-                <item>Bln</item>
 	</string-array>
 
 </resources>
