@@ -3,7 +3,8 @@ PRODUCT_PACKAGES += \
        ThemeManager \
        ThemeChooser \
        com.tmobile.themes \
-       Achromatic
+       Achromatic \
+       JellyBlue
 
 PRODUCT_COPY_FILES += \
        vendor/aokp/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
