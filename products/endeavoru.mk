@@ -11,9 +11,6 @@ $(call inherit-product, vendor/aokp/configs/common_versions.mk)
 # Inherit the endeavoru device
 $(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
 
-PRODUCT_PACKAGES += \
-	Camera
-
 # Device naming
 PRODUCT_DEVICE := endeavoru
 PRODUCT_NAME := aokp_endeavoru
