@@ -28,5 +28,4 @@ PRODUCT_COPY_FILES +=  \
 DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/endeavoru
 
 PRODUCT_COPY_FILES += \
-	vendor/aokp/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf-cdma.xml \
-	vendor/aokp/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml \
+	vendor/aokp/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
