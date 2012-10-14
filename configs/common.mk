@@ -16,15 +16,18 @@ PRODUCT_PACKAGES += \
     openvpn \
     PhaseBeam \
     ROMControl \
-    Superuser \
-    SwagPapers \
-    UnicornPorn
+    SuperSU \
+    SwagPapers
 
 # move from modules to copy files
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
     vendor/aokp/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
     vendor/aokp/prebuilt/common/app/UnicornPorn.apk:system/app/UnicornPorn.apk \
+
+# Use prebuilt su until fixed when built
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/xbin/su:system/xbin/su
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
