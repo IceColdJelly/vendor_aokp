@@ -13,7 +13,6 @@ PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
     NoiseField \
-    openvpn \
     PhaseBeam \
     ROMControl \
     SuperSU \
