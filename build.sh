@@ -1,6 +1,24 @@
 #!/bin/bash
 
 # build script for endeavoru
+
+# Text color variables
+txtund=$(tput sgr 0 1)          # Underline
+txtbld=$(tput bold)             # Bold
+bldred=${txtbld}$(tput setaf 1) #  red
+bldgrn=${txtbld}$(tput setaf 2) #  green
+bldylw=${txtbld}$(tput setaf 3) #  yellow
+bldblu=${txtbld}$(tput setaf 4) #  blue
+bldmag=${txtbld}$(tput setaf 5) #  magenta
+bldcya=${txtbld}$(tput setaf 6) #  cyan
+bldwht=${txtbld}$(tput setaf 7) #  white
+txtrst=$(tput sgr0)             # Reset
+info=${bldwht}*${txtrst}        # Feedback
+pass=${bldblu}*${txtrst}
+warn=${bldred}*${txtrst}
+ques=${bldblu}?${txtrst}
+
+
 # $1 should be build number
 
 export USE_CCACHE=1
@@ -25,9 +43,9 @@ if [ "$1" != "" ]; then
     fi
     mv -f ${SUM} ${ANDROID_PRODUCT_OUT}/aokp_endeavoru-ICJ-V"$1".zip.md5sum
 
-    finish="\n\n\nIceColdJelly V$1 compiled for your flashing pleasure!!!\n\n\n"
+    finish="$(tput setaf 5)\n\n\nIceColdJelly V$1 compiled for your flashing pleasure!!!\n\n\n$(tput sgr0)"
     printf "$finish"
 else
-    finish="\n\n\nIceColdJelly unofficial compiled for your flashing pleasure!!!\n\nNOW...\nFLASH\nFLASH\nFLASH!!!\n"
+    finish="$(tput setaf 5)\n\n\nIceColdJelly unofficial compiled for your flashing pleasure!!!\n\nNOW...\nFLASH\nFLASH\nFLASH!!!\n$(tput sgr0)"
     printf "$finish"
 fi
